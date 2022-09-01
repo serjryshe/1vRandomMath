@@ -112,7 +112,7 @@ renderHp()
 
 
 function renderFooterMsg() {
-        footerMsgEl.innerHTML += `<ul>
+        footerMsgEl.innerHTML = `<ul> This round
         ${playerOneName} did ${playerAttackDmg} damage to ${playerTwoName}
         while ${playerTwoName} did ${robotAttackDmg} to ${playerOneName}</ul>`
 }
