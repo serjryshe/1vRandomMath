@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cotton VS Robot</title>
+</head>
+<body>
+        <div class="app">
+            <header>
+                <h1>FINAL BATTLE</h1>
+            </header>
+            <container class="fight-window">
+
+                <div class="playerOne">
+                    <h2 id="nameOne" class="userOneName"></h2>
+                    <img src="images/3.png">
+                    <h2 id="userOneHp"></h2>
+                    <div class="buttons-one">
+                    <progress id="healthOne" value="100" max="100"></progress>
+
+                    </div>
+                </div>
+
+                <div id="middleMsg">
+                    <h2 id="player-move">Choose your Attacking <br> and Defending move <br> and press "Attack"</h2>                   
+                   
+
+                    <div>
+                         <p>Attack</p>
+                        <label><input class="attack" onchange="checkAttack(this)" type="checkbox" id="headA">Head</label>
+                        <label><input class="attack" onchange="checkAttack(this)" type="checkbox" id="bodyA">Body</label>
+                      </div>
+
+                      
+                    <div>
+                        <p>Defending</p>
+                        <label><input class="defence" onchange="checkDefence(this)" type="checkbox" id="headD">Head</label>
+                        <label><input class="defence" onchange="checkDefence(this)" type="checkbox" id="bodyD">Body</label>
+                      
+
+                    </div>
+                      <button id="attack-head">ATTACK</button>
+                </div>
+
+                
+                <div class="playerTwo">
+                    <h2 id="nameTwo" class="userTwoName"></h2>
+                    <img src="images/7.png" style="transform: scaleX(-1)" id="robotPicture" alt="pfp of the opponent">
+                    <h2 id="userTwoHp"></h2>
+                    <progress id="healthTwo" value="100" max="100"></progress>
+                </div>
+            </container>
+
+            <footer>
+                <p id="footerMsg"></p>
+            </footer>
+        </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

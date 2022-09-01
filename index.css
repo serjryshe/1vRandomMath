@@ -1,0 +1,93 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+
+    background-color: black;
+    color: white;
+
+
+}
+
+section {
+    max-height: 800px;
+}
+
+input[type=checkbox] {
+    accent-color: red;
+  }
+
+#player-move {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+p {
+    font-size: 22px;
+}
+
+#nameOne, #nameTwo {
+    font-size: 38px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border: 1px dotted black;
+}
+
+button {
+
+
+    padding: 10px 40px;
+    margin-top: 50px;
+}
+
+header {
+    border: 1px solid white;
+}
+
+.fight-window {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+#middleMsg {
+
+    text-align: center;
+}
+
+progress {
+    border: 0;
+    background-color: red;
+    border-radius: 20px;
+}
+      
+.progress {
+    height: 30px;
+    border-radius: 30px;
+    width:100%;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 40px;
+  }
+  
+  progress[value]::-webkit-progress-value {
+    border-radius: 40px;
+    background-color:red;
+  }
